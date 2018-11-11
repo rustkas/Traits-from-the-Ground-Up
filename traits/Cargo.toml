@@ -1,0 +1,22 @@
+[package]
+name = "traits"
+version = "0.1.0"
+authors = ["Kosorukov Anatoly <java1cprog@yandex.ru>"]
+
+[dependencies]
+
+[[bin]]
+name="trait"
+path="src/trait.rs"
+
+[[bin]]
+name="print_news"
+path="src/print_news.rs"
+
+[[bin]]
+name="print_news2"
+path="src/print_news2.rs"
+
+[[bin]]
+name="print_news5"
+path="src/print_news5.rs"

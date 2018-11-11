@@ -1,0 +1,30 @@
+[package]
+name = "data_and_behavior"
+version = "0.1.0"
+authors = ["Kosorukov Anatoly <java1cprog@yandex.ru>"]
+
+[dependencies]
+
+[[bin]]
+name="make_true"
+path="src/make_true.rs"
+
+[[bin]]
+name="facts"
+path="src/facts.rs"
+
+[[bin]]
+name="add_method"
+path="src/add_method.rs"
+
+[[bin]]
+name="add_method2"
+path="src/add_method2.rs"
+
+[[bin]]
+name="add_method3"
+path="src/add_method3.rs"
+
+[[bin]]
+name="unambiguous_function_call"
+path="src/unambiguous_function_call.rs"
