@@ -20,7 +20,7 @@ impl Truth for Fact {
     }
 }
 
-impl Truth for Fact {
+impl FakeTruth for Fact {
     fn make_true(&self) -> Self {
         Fact {
             text: format!("{} This is a fake truth", self.text),
@@ -32,5 +32,8 @@ fn main(){
     let fact = Fact {
         text: String::from("No facts."),
     };
-    <Fact as Truth>::make_true(fact);
+    let truth = <Fact as Truth>::make_true(&fact);
+    let fake_truth = <Fact as FakeTruth>::make_true(&fact);
+    println!("{}", truth.text);
+    println!("{}", fake_truth.text);
 }
